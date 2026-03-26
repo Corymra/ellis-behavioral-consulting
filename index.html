@@ -7,12 +7,10 @@
 
 <style>
 
-html{
-scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth;}
 
 body{
-font-family: Arial, Helvetica, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 margin:0;
 background:#f4f6fb;
 color:#333;
@@ -25,15 +23,8 @@ padding:60px 20px;
 text-align:center;
 }
 
-header h1{
-margin:0;
-font-size:40px;
-}
-
-header p{
-font-size:18px;
-margin-top:10px;
-}
+header h1{margin:0;font-size:40px;}
+header p{font-size:18px;margin-top:10px;}
 
 nav{
 background:white;
@@ -42,7 +33,6 @@ text-align:center;
 box-shadow:0 2px 5px rgba(0,0,0,0.1);
 position:sticky;
 top:0;
-z-index:1000;
 }
 
 nav a{
@@ -50,32 +40,6 @@ margin:0 20px;
 text-decoration:none;
 color:#2c3e50;
 font-weight:bold;
-font-size:16px;
-}
-
-.hero{
-padding:70px 20px;
-text-align:center;
-background:white;
-}
-
-.hero img{
-max-width:900px;
-width:100%;
-border-radius:10px;
-margin-top:30px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.hero h2{
-font-size:34px;
-margin-bottom:15px;
-}
-
-.hero p{
-max-width:700px;
-margin:auto;
-font-size:18px;
 }
 
 .section{
@@ -86,8 +50,20 @@ margin:auto;
 
 .section h2{
 text-align:center;
-font-size:32px;
 margin-bottom:40px;
+}
+
+.hero{
+text-align:center;
+background:white;
+padding:70px 20px;
+}
+
+.hero img{
+max-width:900px;
+width:100%;
+border-radius:10px;
+margin-top:30px;
 }
 
 .services{
@@ -104,16 +80,7 @@ box-shadow:0 3px 12px rgba(0,0,0,0.08);
 text-align:center;
 }
 
-.card img{
-width:80px;
-margin-bottom:15px;
-}
-
-.card h3{
-margin-top:0;
-}
-
-.about{
+.about, .credentials, .contact, .faq, .testimonials{
 background:white;
 padding:50px;
 border-radius:10px;
@@ -121,23 +88,39 @@ box-shadow:0 3px 12px rgba(0,0,0,0.08);
 text-align:center;
 }
 
-.about img{
-width:200px;
-border-radius:100px;
-margin-bottom:20px;
+.testimonial{
+margin:20px auto;
+max-width:700px;
+font-style:italic;
 }
 
-.contact{
-background:white;
-padding:50px;
-border-radius:10px;
-box-shadow:0 3px 12px rgba(0,0,0,0.08);
-text-align:center;
+form{
+max-width:600px;
+margin:auto;
+text-align:left;
+}
+
+form input, form textarea, form select{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+form button{
+background:#2c3e50;
+color:white;
+padding:12px;
+border:none;
+border-radius:5px;
+width:100%;
+font-size:16px;
 }
 
 .contact a{
 display:block;
-margin:15px;
+margin:10px;
 font-size:18px;
 color:#2c3e50;
 text-decoration:none;
@@ -149,15 +132,11 @@ background:#2c3e50;
 color:white;
 text-align:center;
 padding:25px;
-margin-top:50px;
+margin-top:40px;
 }
 
 @media (max-width:700px){
-
-.services{
-grid-template-columns:1fr;
-}
-
+.services{grid-template-columns:1fr;}
 }
 
 </style>
@@ -166,19 +145,16 @@ grid-template-columns:1fr;
 <body>
 
 <header>
-
 <h1>Ellis Behavioral Consulting</h1>
 <p>Board Certified Behavioral Analysis Services</p>
-
 </header>
 
 <nav>
-
 <a href="#home">Home</a>
 <a href="#services">Services</a>
 <a href="#about">About</a>
+<a href="#consult">Consultation</a>
 <a href="#contact">Contact</a>
-
 </nav>
 
 <section class="hero" id="home">
@@ -186,10 +162,10 @@ grid-template-columns:1fr;
 <h2>Helping Children with Autism Thrive Through Evidence-Based Behavioral Support</h2>
 
 <p>
-Providing individualized behavioral support for children and families navigating autism and developmental challenges in the Salisbury, Maryland region.
+Providing individualized behavioral support for children and families navigating autism and developmental challenges.
 </p>
 
-<img src="https://images.unsplash.com/photo-1573496130141-209d200cebd8?auto=format&fit=crop&w=1200&q=80">
+<img src="https://images.unsplash.com/photo-1573496130141-209d200cebd8">
 
 </section>
 
@@ -200,27 +176,23 @@ Providing individualized behavioral support for children and families navigating
 <div class="services">
 
 <div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
 <h3>Behavioral Assessment</h3>
-<p>Professional behavioral evaluations to understand developmental needs and build effective treatment strategies.</p>
+<p>Professional behavioral evaluations to identify developmental needs and build effective treatment strategies.</p>
 </div>
 
 <div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png">
 <h3>Autism Support</h3>
-<p>Evidence-based behavioral support designed to help children build communication, learning, and life skills.</p>
+<p>Evidence-based behavioral support designed to help children build communication and life skills.</p>
 </div>
 
 <div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png">
 <h3>Individualized Plans</h3>
-<p>Customized treatment planning focused on measurable progress and long-term developmental success.</p>
+<p>Customized treatment plans focused on measurable progress and long-term success.</p>
 </div>
 
 <div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/1995/1995574.png">
 <h3>Parent Coaching</h3>
-<p>Guidance and strategies that empower families to support positive behavior and developmental growth.</p>
+<p>Guidance that empowers families to reinforce positive behavior and developmental growth.</p>
 </div>
 
 </div>
@@ -233,19 +205,119 @@ Providing individualized behavioral support for children and families navigating
 
 <div class="about">
 
-<img src="https://cdn-icons-png.flaticon.com/512/921/921347.png">
-
 <p>
 Kristen Ellis is a Board Certified Behavior Analyst (BCBA) with over six years of professional experience supporting children and families affected by autism and developmental challenges.
 </p>
 
 <p>
-She earned her education from Johns Hopkins University and James Madison University and provides compassionate, evidence-based behavioral services designed to help families thrive.
+Her work focuses on individualized support, collaboration with families, and practical strategies that create meaningful developmental progress.
 </p>
 
-<p>
-Her work focuses on individualized support, collaboration with families, and practical strategies that create meaningful progress in daily life.
-</p>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Credentials</h2>
+
+<div class="credentials">
+
+<p>Board Certified Behavior Analyst (BCBA)</p>
+
+<p>Education:</p>
+
+<p>Johns Hopkins University</p>
+
+<p>James Madison University</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Testimonials</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+“Our child made incredible progress in communication within just a few months.”
+</div>
+
+<div class="testimonial">
+“The guidance we received helped our entire family better understand and support our child.”
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>FAQ</h2>
+
+<div class="faq">
+
+<p><strong>What is ABA therapy?</strong><br>
+Applied Behavior Analysis (ABA) is an evidence-based approach that helps children develop communication, social, and learning skills.</p>
+
+<p><strong>What ages do you work with?</strong><br>
+Services typically support early childhood through adolescence depending on individual needs.</p>
+
+<p><strong>Do you offer in-home services?</strong><br>
+Service options may include in-home support, parent coaching, or consultation depending on family needs.</p>
+
+</div>
+
+</section>
+
+<section class="section" id="consult">
+
+<h2>Request a Consultation</h2>
+
+<div class="contact">
+
+<form>
+
+<input type="text" placeholder="Parent / Guardian Name">
+
+<input type="email" placeholder="Email Address">
+
+<input type="tel" placeholder="Phone Number">
+
+<select>
+<option>Child Age Range</option>
+<option>2-5</option>
+<option>6-10</option>
+<option>11-15</option>
+<option>16+</option>
+</select>
+
+<textarea rows="4" placeholder="Briefly describe your needs"></textarea>
+
+<button>Submit Request</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Service Area</h2>
+
+<div class="contact">
+
+<iframe
+width="100%"
+height="300"
+style="border:0"
+loading="lazy"
+allowfullscreen
+src="https://www.google.com/maps?q=Salisbury,Maryland&output=embed">
+</iframe>
 
 </div>
 
@@ -257,10 +329,9 @@ Her work focuses on individualized support, collaboration with families, and pra
 
 <div class="contact">
 
-<p>Request a consultation or learn more about services.</p>
+<a href="tel:4105550123">410-555-0123</a>
 
-<a href="tel:4105550123">📞 410-555-0123</a>
-<a href="mailto:contact@genericemail.com">✉ contact@genericemail.com</a>
+<a href="mailto:contact@genericemail.com">contact@genericemail.com</a>
 
 </div>
 

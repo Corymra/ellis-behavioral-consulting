@@ -3,156 +3,197 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Ellis Behavioral Consulting</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
+html{scroll-behavior:smooth;}
+
 body{
+font-family:'Inter', Arial, sans-serif;
 margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#f5f7f7;
+background:#f4f7f6;
 color:#333;
-line-height:1.6;
 }
 
+/* HEADER */
+
 header{
-background:
-linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-url("https://images.unsplash.com/photo-1604881991720-f91add269bed?auto=format&fit=crop&w=1600&q=80");
-background-size:cover;
-background-position:center;
-color:white;
-padding:120px 20px;
+background:#6fd0d8;
+color:#1f3a3d;
+padding:60px 20px;
 text-align:center;
 }
 
 header h1{
 margin:0;
-font-size:48px;
-font-weight:700;
+font-size:40px;
 }
 
 header p{
+font-size:18px;
 margin-top:10px;
-font-size:20px;
 }
+
+/* NAV */
+
+nav{
+background:white;
+padding:15px;
+text-align:center;
+box-shadow:0 2px 6px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
+}
+
+nav a{
+margin:0 20px;
+text-decoration:none;
+color:#4a6f6b;
+font-weight:600;
+}
+
+/* SECTIONS */
 
 .section{
+padding:70px 20px;
 max-width:1100px;
 margin:auto;
-padding:60px 20px;
 }
 
-.section-title{
+.section h2{
 text-align:center;
-font-size:32px;
 margin-bottom:40px;
-color:#2f6f73;
+color:#4a6f6b;
 }
 
-.image-section{
+/* HERO */
+
+.hero{
 text-align:center;
-background:#ffffff;
-padding:40px 20px;
+background:white;
+padding:70px 20px;
 }
 
-.image-section img{
+.hero img{
 max-width:900px;
 width:100%;
-border-radius:10px;
-box-shadow:0 6px 18px rgba(0,0,0,0.15);
+border-radius:12px;
+margin-top:30px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
-.services-grid{
+/* SERVICES */
+
+.services{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
 }
 
-.service-card{
+.card{
 background:white;
-padding:25px;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 14px rgba(0,0,0,0.08);
+text-align:center;
+transition:0.25s;
+border-top:4px solid #a8cbb7;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 24px rgba(0,0,0,0.12);
+}
+
+/* CONTENT BOXES */
+
+.about,
+.credentials,
+.contact,
+.faq,
+.testimonials{
+background:white;
+padding:50px;
+border-radius:12px;
+box-shadow:0 4px 14px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+/* TESTIMONIALS */
+
+.testimonial{
+margin:25px auto;
+max-width:700px;
+font-style:italic;
+background:#eef6f5;
+padding:22px;
 border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* FORM */
+
+form{
+max-width:600px;
+margin:auto;
 text-align:left;
 }
 
-.service-card h3{
-margin-top:0;
-color:#2f6f73;
-}
-
-.about-box{
-background:white;
-padding:40px;
-border-radius:10px;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
-max-width:900px;
-margin:auto;
-}
-
-.testimonial-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-}
-
-.testimonial{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
-font-style:italic;
-}
-
-.faq-item{
-margin-bottom:20px;
-}
-
-.faq-item strong{
-color:#2f6f73;
-}
-
-.contact-box{
-background:white;
-padding:35px;
-border-radius:10px;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
-max-width:700px;
-margin:auto;
-}
-
-.contact-box input,
-.contact-box textarea{
+form input,
+form textarea,
+form select{
 width:100%;
-padding:12px;
-margin-bottom:15px;
+padding:11px;
+margin:10px 0;
 border-radius:6px;
-border:1px solid #ccc;
-font-size:15px;
+border:1px solid #ccd7d5;
 }
 
-.contact-box button{
-background:#6fc7c4;
-border:none;
-padding:14px 25px;
+form button{
+background:#6fd0d8;
 color:white;
+padding:14px;
+border:none;
+border-radius:8px;
+width:100%;
 font-size:16px;
-border-radius:6px;
 cursor:pointer;
+transition:0.2s;
 }
 
-.contact-box button:hover{
-background:#5bb5b2;
+form button:hover{
+background:#55bcc4;
 }
+
+/* CONTACT LINKS */
+
+.contact a{
+display:block;
+margin:10px;
+font-size:18px;
+color:#4a6f6b;
+text-decoration:none;
+font-weight:600;
+}
+
+/* FOOTER */
 
 footer{
-background:#2f6f73;
-color:white;
+background:#a8cbb7;
+color:#2f4744;
 text-align:center;
-padding:20px;
-margin-top:60px;
+padding:25px;
+margin-top:40px;
+}
+
+/* MOBILE */
+
+@media (max-width:700px){
+.services{
+grid-template-columns:1fr;
+}
 }
 
 </style>
@@ -165,119 +206,150 @@ margin-top:60px;
 <p>Board Certified Behavioral Analysis Services</p>
 </header>
 
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#consult">Consultation</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<section class="image-section">
-<img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1200&q=80">
+<section class="hero" id="home">
+
+<h2>Helping Children with Autism Thrive Through Evidence-Based Behavioral Support</h2>
+
+<p>
+Providing individualized behavioral support for children and families navigating autism and developmental challenges.
+</p>
+
+<img src="https://images.unsplash.com/photo-1604881991720-f91add269bed?auto=format&fit=crop&w=1600&q=80">
+
 </section>
 
+<section class="section" id="services">
 
-<section class="section">
-<h2 class="section-title">Services</h2>
+<h2>Services</h2>
 
-<div class="services-grid">
+<div class="services">
 
-<div class="service-card">
+<div class="card">
 <h3>Behavioral Assessment</h3>
-<p>Professional behavioral evaluations designed to understand developmental needs and guide effective treatment planning.</p>
+<p>Professional behavioral evaluations to identify developmental needs and build effective treatment strategies.</p>
 </div>
 
-<div class="service-card">
+<div class="card">
 <h3>Autism Support</h3>
-<p>Evidence-based strategies that support communication, learning, and daily functioning for children on the autism spectrum.</p>
+<p>Evidence-based behavioral support designed to help children build communication and life skills.</p>
 </div>
 
-<div class="service-card">
-<h3>Parent Coaching</h3>
-<p>Guidance and practical strategies empowering families to reinforce positive behaviors and developmental progress.</p>
-</div>
-
-<div class="service-card">
+<div class="card">
 <h3>Individualized Plans</h3>
-<p>Customized intervention plans focused on measurable progress and long-term developmental success.</p>
+<p>Customized treatment plans focused on measurable progress and long-term success.</p>
+</div>
+
+<div class="card">
+<h3>Parent Coaching</h3>
+<p>Guidance that empowers families to reinforce positive behavior and developmental growth.</p>
 </div>
 
 </div>
+
 </section>
 
+<section class="section" id="about">
 
-<section class="section">
-<h2 class="section-title">About</h2>
+<h2>About</h2>
 
-<div class="about-box">
+<div class="about">
+
 <p>
-Kristen Ellis is a Board Certified Behavior Analyst (BCBA) with professional experience supporting children and families affected by autism and developmental challenges.
+Kristen Ellis is a Board Certified Behavior Analyst (BCBA) with over six years of professional experience supporting children and families affected by autism and developmental challenges.
 </p>
 
 <p>
-She earned her education from Johns Hopkins University and James Madison University and provides compassionate, evidence-based behavioral services designed to help families thrive.
+Her work focuses on individualized support, collaboration with families, and practical strategies that create meaningful developmental progress.
 </p>
 
-<p>
-Her work focuses on individualized support, family collaboration, and practical strategies that make meaningful improvements in everyday life.
-</p>
-</div>
-</section>
-
-
-<section class="section">
-<h2 class="section-title">Testimonials</h2>
-
-<div class="testimonial-grid">
-
-<div class="testimonial">
-“Our family saw incredible progress after working together. The strategies were practical and truly helped our child succeed.”
-</div>
-
-<div class="testimonial">
-“Professional, compassionate, and extremely knowledgeable. The support made a real difference for our family.”
-</div>
-
-<div class="testimonial">
-“The coaching helped us better understand our child and feel confident supporting them every day.”
-</div>
-
-</div>
-</section>
-
-
-<section class="section">
-<h2 class="section-title">FAQ</h2>
-
-<div class="faq-item">
-<strong>What ages do you work with?</strong><br>
-Services focus primarily on children and adolescents experiencing behavioral or developmental challenges.
-</div>
-
-<div class="faq-item">
-<strong>Do you offer parent training?</strong><br>
-Yes. Parent coaching is an important part of long-term success and is included in many service plans.
-</div>
-
-<div class="faq-item">
-<strong>How do I begin services?</strong><br>
-Simply submit a consultation request below and we will follow up to discuss needs and scheduling.
 </div>
 
 </section>
 
+<section class="section">
+
+<h2>Credentials</h2>
+
+<div class="credentials">
+
+<p><strong>Board Certified Behavior Analyst (BCBA)</strong></p>
+<p>Johns Hopkins University</p>
+<p>James Madison University</p>
+
+</div>
+
+</section>
 
 <section class="section">
-<h2 class="section-title">Contact</h2>
 
-<div class="contact-box">
+<h2>Testimonials</h2>
 
-<p><strong>Phone:</strong> <a href="tel:4105550123">410-555-0123</a></p>
-<p><strong>Email:</strong> <a href="mailto:contact@genericemail.com">contact@genericemail.com</a></p>
+<div class="testimonials">
+
+<div class="testimonial">
+“Our child made incredible progress in communication within just a few months.”
+</div>
+
+<div class="testimonial">
+“The guidance we received helped our entire family better understand and support our child.”
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>FAQ</h2>
+
+<div class="faq">
+
+<p><strong>What is ABA therapy?</strong><br>
+Applied Behavior Analysis (ABA) is an evidence-based approach that helps children develop communication, social, and learning skills.</p>
+
+<p><strong>What ages do you work with?</strong><br>
+Services typically support early childhood through adolescence depending on individual needs.</p>
+
+<p><strong>Do you offer in-home services?</strong><br>
+Service options may include in-home support, parent coaching, or consultation depending on family needs.</p>
+
+</div>
+
+</section>
+
+<section class="section" id="consult">
+
+<h2>Request a Consultation</h2>
+
+<div class="contact">
 
 <form>
 
-<input type="text" placeholder="Your Name" required>
+<input type="text" placeholder="Parent / Guardian Name">
 
-<input type="email" placeholder="Your Email" required>
+<input type="email" placeholder="Email Address">
 
-<textarea rows="5" placeholder="How can we help?"></textarea>
+<input type="tel" placeholder="Phone Number">
 
-<button type="submit">Request Consultation</button>
+<select>
+<option>Child Age Range</option>
+<option>2-5</option>
+<option>6-10</option>
+<option>11-15</option>
+<option>16+</option>
+</select>
+
+<textarea rows="4" placeholder="Briefly describe your needs"></textarea>
+
+<button>Submit Request</button>
 
 </form>
 
@@ -285,27 +357,44 @@ Simply submit a consultation request below and we will follow up to discuss need
 
 </section>
 
-
 <section class="section">
-<h2 class="section-title">Location</h2>
 
-<div style="text-align:center;">
+<h2>Service Area</h2>
+
+<div class="contact">
+
 <iframe
 width="100%"
-height="350"
-style="border:0;border-radius:10px;"
+height="300"
+style="border:0"
 loading="lazy"
-src="https://maps.google.com/maps?q=salisbury%20maryland&t=&z=13&ie=UTF8&iwloc=&output=embed">
+allowfullscreen
+src="https://www.google.com/maps?q=Salisbury,Maryland&output=embed">
 </iframe>
+
 </div>
 
 </section>
 
+<section class="section" id="contact">
+
+<h2>Contact</h2>
+
+<div class="contact">
+
+<a href="tel:4105550123">410-555-0123</a>
+
+<a href="mailto:contact@genericemail.com">contact@genericemail.com</a>
+
+</div>
+
+</section>
 
 <footer>
-© 2026 Ellis Behavioral Consulting
-</footer>
 
+<p>Ellis Behavioral Consulting • Salisbury Maryland</p>
+
+</footer>
 
 </body>
 </html>

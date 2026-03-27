@@ -14,25 +14,36 @@ html{scroll-behavior:smooth;}
 body{
 font-family:'Inter', Arial, sans-serif;
 margin:0;
-background:#f4f6fb;
+background:#f4f7f6;
 color:#333;
 }
 
+/* HEADER */
+
 header{
-background:#2c3e50;
-color:white;
+background:#6fd0d8;
+color:#1f3a3d;
 padding:60px 20px;
 text-align:center;
 }
 
-header h1{margin:0;font-size:40px;}
-header p{font-size:18px;margin-top:10px;}
+header h1{
+margin:0;
+font-size:40px;
+}
+
+header p{
+font-size:18px;
+margin-top:10px;
+}
+
+/* NAV */
 
 nav{
 background:white;
 padding:15px;
 text-align:center;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
+box-shadow:0 2px 6px rgba(0,0,0,0.08);
 position:sticky;
 top:0;
 }
@@ -40,9 +51,11 @@ top:0;
 nav a{
 margin:0 20px;
 text-decoration:none;
-color:#2c3e50;
+color:#4a6f6b;
 font-weight:600;
 }
+
+/* SECTIONS */
 
 .section{
 padding:70px 20px;
@@ -53,7 +66,10 @@ margin:auto;
 .section h2{
 text-align:center;
 margin-bottom:40px;
+color:#4a6f6b;
 }
+
+/* HERO */
 
 .hero{
 text-align:center;
@@ -64,9 +80,12 @@ padding:70px 20px;
 .hero img{
 max-width:900px;
 width:100%;
-border-radius:10px;
+border-radius:12px;
 margin-top:30px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
+
+/* SERVICES */
 
 .services{
 display:grid;
@@ -77,34 +96,44 @@ gap:30px;
 .card{
 background:white;
 padding:30px;
-border-radius:10px;
-box-shadow:0 3px 12px rgba(0,0,0,0.08);
+border-radius:12px;
+box-shadow:0 4px 14px rgba(0,0,0,0.08);
 text-align:center;
 transition:0.25s;
+border-top:4px solid #a8cbb7;
 }
 
 .card:hover{
 transform:translateY(-6px);
-box-shadow:0 10px 20px rgba(0,0,0,0.12);
+box-shadow:0 12px 24px rgba(0,0,0,0.12);
 }
 
-.about, .credentials, .contact, .faq, .testimonials{
+/* CONTENT BOXES */
+
+.about,
+.credentials,
+.contact,
+.faq,
+.testimonials{
 background:white;
 padding:50px;
-border-radius:10px;
-box-shadow:0 3px 12px rgba(0,0,0,0.08);
+border-radius:12px;
+box-shadow:0 4px 14px rgba(0,0,0,0.08);
 text-align:center;
 }
+
+/* TESTIMONIALS */
 
 .testimonial{
 margin:25px auto;
 max-width:700px;
 font-style:italic;
-background:#f8f9fc;
-padding:20px;
-border-radius:8px;
-box-shadow:0 2px 6px rgba(0,0,0,0.05);
+background:#eef6f5;
+padding:22px;
+border-radius:10px;
 }
+
+/* FORM */
 
 form{
 max-width:600px;
@@ -112,16 +141,18 @@ margin:auto;
 text-align:left;
 }
 
-form input, form textarea, form select{
+form input,
+form textarea,
+form select{
 width:100%;
-padding:10px;
+padding:11px;
 margin:10px 0;
-border-radius:5px;
-border:1px solid #ccc;
+border-radius:6px;
+border:1px solid #ccd7d5;
 }
 
 form button{
-background:#2c3e50;
+background:#6fd0d8;
 color:white;
 padding:14px;
 border:none;
@@ -133,28 +164,36 @@ transition:0.2s;
 }
 
 form button:hover{
-background:#1f2f3d;
+background:#55bcc4;
 }
+
+/* CONTACT LINKS */
 
 .contact a{
 display:block;
 margin:10px;
 font-size:18px;
-color:#2c3e50;
+color:#4a6f6b;
 text-decoration:none;
-font-weight:bold;
+font-weight:600;
 }
 
+/* FOOTER */
+
 footer{
-background:#2c3e50;
-color:white;
+background:#a8cbb7;
+color:#2f4744;
 text-align:center;
 padding:25px;
 margin-top:40px;
 }
 
+/* MOBILE */
+
 @media (max-width:700px){
-.services{grid-template-columns:1fr;}
+.services{
+grid-template-columns:1fr;
+}
 }
 
 </style>
@@ -241,10 +280,8 @@ Her work focuses on individualized support, collaboration with families, and pra
 
 <div class="credentials">
 
-<p>Board Certified Behavior Analyst (BCBA)</p>
-
+<p><strong>Board Certified Behavior Analyst (BCBA)</strong></p>
 <p>Johns Hopkins University</p>
-
 <p>James Madison University</p>
 
 </div>

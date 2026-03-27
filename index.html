@@ -141,6 +141,15 @@ margin-bottom:25px;
 box-shadow:0 8px 18px rgba(0,0,0,0.08);
 }
 
+/* SECTION IMAGES */
+
+.section-img{
+max-width:650px;
+width:100%;
+border-radius:10px;
+margin-bottom:25px;
+}
+
 /* TESTIMONIALS */
 
 .testimonial{
@@ -216,9 +225,38 @@ display:block;
 /* MOBILE */
 
 @media (max-width:700px){
+
 .services{
 grid-template-columns:1fr;
 }
+
+header h1{
+font-size:28px;
+}
+
+header{
+padding:60px 16px;
+}
+
+.about,
+.credentials,
+.contact,
+.faq,
+.testimonials{
+padding:28px 20px;
+}
+
+.hero img{
+max-height:200px;
+object-fit:cover;
+}
+
+.about img,
+.section-img{
+max-height:220px;
+object-fit:cover;
+}
+
 }
 
 </style>
@@ -325,14 +363,14 @@ Her work focuses on individualized support, collaboration with families, and pra
 
 <div class="testimonials">
 
-<img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=1200&q=80" style="max-width:650px;border-radius:10px;margin-bottom:25px;">
+<img class="section-img" src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=1200&q=80">
 
 <div class="testimonial">
-“Our child made incredible progress in communication within just a few months.”
+"Our child made incredible progress in communication within just a few months."
 </div>
 
 <div class="testimonial">
-“The guidance we received helped our entire family better understand and support our child.”
+"The guidance we received helped our entire family better understand and support our child."
 </div>
 
 </div>
@@ -364,7 +402,7 @@ Service options may include in-home support, parent coaching, or consultation de
 
 <div class="contact">
 
-<img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1200&q=80" style="max-width:650px;border-radius:10px;margin-bottom:25px;">
+<img class="section-img" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1200&q=80">
 
 <form>
 
